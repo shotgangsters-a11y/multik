@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мультик в подарок — герой в нём ваш близкий</title>
+<meta name="description" content="Персональный мультфильм по вашим фотографиям: человек видит себя, своих близких и памятные места. Подарок, который не забывают.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- og:image требует АБСОЛЮТНЫЙ адрес — после выкладки заменить домен -->
+<meta property="og:title" content="Мультик в подарок — герой в нём ваш близкий">
+<meta property="og:description" content="Персональный мультфильм по вашим фотографиям. Через 3 дня у вас подарок, который не забывают.">
+<meta property="og:image" content="hero.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0b;
+    --ink: #f2f1ee;
+    --muted: #8b8b88;
+    --line: #232325;
+    --steel: #aab3ba;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  .wrap { max-width: 620px; margin: 0 auto; padding: 0 22px; }
+  header { padding: 56px 0 0; }
+  .hero-img, .section-img {
+    width: 100%; display: block;
+    border: 1px solid var(--line);
+  }
+  .tagline {
+    font-size: 15px; color: var(--muted);
+    text-align: center; margin: 24px 0 6px;
+  }
+  .tagline b { color: var(--ink); font-weight: 600; }
+  h2 {
+    font-family: "Oswald", "Arial Narrow", sans-serif;
+    font-size: 22px; font-weight: 600;
+    letter-spacing: .10em; text-transform: uppercase;
+    margin: 0 0 18px; color: var(--ink);
+  }
+  section { margin-top: 64px; }
+  .rule {
+    display: flex; align-items: baseline; gap: 14px; margin-bottom: 18px;
+    border-top: 1px solid var(--line); padding-top: 26px;
+  }
+  .rule .num {
+    font-family: "Oswald", sans-serif; font-size: 13px; color: var(--muted);
+    letter-spacing: .2em;
+  }
+  .rule h2 { margin: 0; }
+  p.lead { font-size: 18px; text-align: center; color: var(--ink); }
+  section p { color: #cfcecb; }
+  ul.occasions { list-style: none; margin-top: 6px; }
+  ul.occasions li {
+    padding: 13px 0; border-bottom: 1px solid var(--line);
+    color: #cfcecb; font-size: 15.5px;
+  }
+  ul.occasions li:last-child { border-bottom: none; }
+  ul.occasions b {
+    color: var(--ink); font-weight: 600; text-transform: uppercase;
+    font-size: 13.5px; letter-spacing: .06em; margin-right: 6px;
+  }
+  .btn {
+    display: block; width: 100%; text-align: center; text-decoration: none;
+    background: var(--ink); color: #0a0a0b; font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: .18em; text-transform: uppercase; font-size: 14px;
+    padding: 18px 24px; border-radius: 2px; margin: 30px 0 0;
+    transition: background .15s ease;
+  }
+  .btn:hover { background: #ffffff; }
+  .btn.ghost {
+    background: transparent; color: var(--ink);
+    border: 1px solid #3a3a3d;
+  }
+  .btn.ghost:hover { background: #151517; }
+  .ps {
+    text-align: center; font-size: 15px; color: var(--muted);
+    margin: 72px 0 0;
+  }
+  footer {
+    text-align: center; padding: 44px 0 34px; font-size: 12.5px; color: var(--muted);
+    letter-spacing: .05em;
+  }
+  footer a { color: var(--steel); text-decoration: none; }
+  .placeholder {
+    width: 100%; aspect-ratio: 16/10;
+    background: repeating-linear-gradient(45deg, #111113, #111113 14px, #151518 14px, #151518 28px);
+    border: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: center;
+    color: #55555a; font-size: 13.5px; text-align: center; padding: 16px;
+    letter-spacing: .03em;
+  }
+  @media (min-width: 700px) {
+    .btn { max-width: 400px; margin-left: auto; margin-right: auto; }
+    h2 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <img class="hero-img" src="hero.jpg" alt="Семейное фото превращается в мультик">
+    <p class="tagline">Когда обычного поздравления мало… <b>Подарите мультик, где герой — ваш близкий.</b></p>
+  </header>
+
+  <section style="margin-top: 40px;">
+    <p class="lead">Вы лучше всех знаете этого человека: чем он живёт, кого любит, что для него важно. Мультик собирает всё это в маленькую историю — и главную роль в ней играет он сам.</p>
+    <a class="btn" href="https://t.me/ruslan_ai_creator">Заказать мультик</a>
+  </section>
+
+  <section>
+    <div class="rule"><span class="num">01</span><h2>За что такой подарок любят</h2></div>
+    <p>Самые сильные мультики — те, где на экране оживают старые фотографии. Родители в молодости, бабушки и дедушки, любимый пёс из детства — я бережно переношу их в кадр по вашим снимкам. Человек видит рядом с собой тех, кто ему дорог, — таких эмоций не даёт ни один другой подарок.</p>
+  </section>
+
+  <section>
+    <div class="rule"><span class="num">02</span><h2>Кому и к какому случаю</h2></div>
+    <img class="section-img" src="povody.jpg" alt="Семья на диване — фото и мультяшная версия">
+    <ul class="occasions">
+      <li><b>День рождения</b> мужа или жены — ваша история и общие моменты</li>
+      <li><b>Юбилей</b> мамы и папы — дети, внуки и места, которые им дороги</li>
+      <li><b>Подарок отцу</b> — его дело, его увлечения, его путь</li>
+      <li><b>Сюрприз</b> сестре или подруге — её мечты и то, что делает её особенной</li>
+      <li><b>Признание</b> любимому человеку — ваша история, рассказанная мультиком</li>
+      <li><b>Память</b> о тех, кого уже нет рядом — родители, бабушки, дедушки, питомцы</li>
+    </ul>
+    <a class="btn" href="https://t.me/ruslan_ai_creator">Заказать мультик</a>
+  </section>
+
+  <section>
+    <div class="rule"><span class="num">03</span><h2>Как это работает</h2></div>
+    <p>Вы рассказываете о человеке и присылаете фотографии — старые, новые, любые. Дальше работаю я: собираю историю, где он увидит себя, своих близких и важные для него места. Через 3 дня мультик у вас.</p>
+    <a class="btn" href="https://t.me/ruslan_ai_creator">Заказать</a>
+  </section>
+
+  <section>
+    <div class="rule"><span class="num">04</span><h2>Не знаете, с чего начать?</h2></div>
+    <p>Просто напишите мне: кого поздравляем, сколько человек показать, какие детали важны. Подскажу формат и длину, расскажу, каким получится мультик. Ни к чему не обязывает.</p>
+    <a class="btn ghost" href="https://t.me/ruslan_ai_creator">Написать</a>
+  </section>
+
+  <section>
+    <div class="rule"><span class="num">05</span><h2>Готовы начать?</h2></div>
+    <img class="section-img" src="final.jpg" alt="Старая фотография оживает в мультик через золотое сияние">
+    <p style="margin-top:18px;">Выбираете длину и оплачиваете. После оплаты пришлю короткую форму для деталей и фотографий. Через 3 дня получаете готовый мультик.</p>
+    <a class="btn" href="https://t.me/ruslan_ai_creator">Оплатить заказ</a>
+  </section>
+
+  <p class="ps">P.S. Этот подарок скажет за вас: «Ты мне дорог. Я помню всё». Такое не забывают.</p>
+
+  <footer>МУЛЬТИКИ ПО ФОТОГРАФИЯМ · <a href="https://t.me/ruslan_ai_creator">t.me/ruslan_ai_creator</a></footer>
+
+</div>
+
+</body>
+</html>
