@@ -90,6 +90,22 @@
     gap: 16px; padding: 15px 0; border-bottom: 1px solid var(--line);
   }
   ul.tariffs li:last-child { border-bottom: none; }
+  ul.tariffs li.featured {
+    background: #17181c; border: 1px solid #3a3a3d; border-radius: 4px;
+    padding: 15px 14px; margin: 4px -14px;
+    flex-wrap: wrap; justify-content: space-between;
+  }
+  ul.tariffs li.featured .t-desc { flex: none; width: 100%; order: 3; margin-top: 6px; }
+  .t-badge {
+    display: inline-block; font-size: 10.5px; letter-spacing: .14em;
+    text-transform: uppercase; color: #0a0a0b; background: var(--ink);
+    padding: 2px 8px; border-radius: 2px; margin-left: 8px;
+    font-family: "Inter", sans-serif; font-weight: 600; vertical-align: middle;
+  }
+  .t-old {
+    font-size: 14px; color: var(--muted); text-decoration: line-through;
+    margin-right: 8px; font-weight: 400;
+  }
   ul.tariffs .t-name {
     font-family: "Oswald", sans-serif; font-size: 16px; font-weight: 600;
     text-transform: uppercase; letter-spacing: .08em; color: var(--ink);
@@ -169,26 +185,26 @@
       <li>
         <span class="t-name">15 секунд</span>
         <span class="t-desc">короткое поздравление, 2–3 сцены</span>
-        <span class="t-price">3 500 ₽</span>
+        <span class="t-price"><span class="t-old">3 500</span>2 790 ₽</span>
       </li>
       <li>
         <span class="t-name">30 секунд</span>
         <span class="t-desc">мини-история, музыка и озвучка</span>
-        <span class="t-price">5 000 ₽</span>
+        <span class="t-price"><span class="t-old">5 000</span>3 990 ₽</span>
       </li>
-      <li>
-        <span class="t-name">45 секунд</span>
+      <li class="featured">
+        <span class="t-name">45 секунд<span class="t-badge">выбирают чаще</span></span>
         <span class="t-desc">сюжет по вашей истории, памятные места</span>
-        <span class="t-price">6 500 ₽</span>
+        <span class="t-price"><span class="t-old">6 500</span>5 190 ₽</span>
       </li>
       <li>
         <span class="t-name">60 секунд</span>
         <span class="t-desc">полная семейная история, оживление старых фото, финальные титры</span>
-        <span class="t-price">8 000 ₽</span>
+        <span class="t-price"><span class="t-old">8 000</span>6 390 ₽</span>
       </li>
     </ul>
-    <p class="t-note">В каждый тариф входят до трёх персонажей и два круга правок. Каждый дополнительный персонаж — 700 ₽.</p>
-    <a class="btn" href="https://t.me/ruslan_ai_creator">Выбрать тариф</a>
+    <p class="t-note">Цены запуска — действуют на ближайшие заказы, дальше вернутся обычные. В каждый тариф входят до трёх персонажей и два круга правок; дополнительный персонаж — 700 ₽.</p>
+    <a class="btn" href="https://t.me/ruslan_ai_creator">Забронировать цену запуска</a>
   </section>
 
   <section>
