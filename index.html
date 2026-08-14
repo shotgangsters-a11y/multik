@@ -84,6 +84,23 @@
     border: 1px solid #3a3a3d;
   }
   .btn.ghost:hover { background: #151517; }
+  ul.tariffs { list-style: none; margin-top: 6px; }
+  ul.tariffs li {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 16px; padding: 15px 0; border-bottom: 1px solid var(--line);
+  }
+  ul.tariffs li:last-child { border-bottom: none; }
+  ul.tariffs .t-name {
+    font-family: "Oswald", sans-serif; font-size: 16px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .08em; color: var(--ink);
+    white-space: nowrap;
+  }
+  ul.tariffs .t-desc { font-size: 14px; color: var(--muted); flex: 1; }
+  ul.tariffs .t-price {
+    font-family: "Oswald", sans-serif; font-size: 20px; font-weight: 600;
+    color: var(--ink); white-space: nowrap;
+  }
+  .t-note { font-size: 13.5px; color: var(--muted); margin-top: 12px; }
   .ps {
     text-align: center; font-size: 15px; color: var(--muted);
     margin: 72px 0 0;
@@ -147,13 +164,36 @@
   </section>
 
   <section>
-    <div class="rule"><span class="num">04</span><h2>Не знаете, с чего начать?</h2></div>
+    <div class="rule"><span class="num">04</span><h2>Сколько это стоит</h2></div>
+    <ul class="tariffs">
+      <li>
+        <span class="t-name">30 секунд</span>
+        <span class="t-desc">один герой, 3–4 сцены, музыка</span>
+        <span class="t-price">2 990 ₽</span>
+      </li>
+      <li>
+        <span class="t-name">60 секунд</span>
+        <span class="t-desc">до трёх героев, сюжет по вашей истории, озвучка</span>
+        <span class="t-price">4 990 ₽</span>
+      </li>
+      <li>
+        <span class="t-name">До 2 минут</span>
+        <span class="t-desc">семейная история, до шести героев, оживление старых фото, финальные титры</span>
+        <span class="t-price">7 990 ₽</span>
+      </li>
+    </ul>
+    <p class="t-note">В каждый тариф включены два круга правок. Срочно за 24 часа — +50% к цене.</p>
+    <a class="btn" href="https://t.me/ruslan_ai_creator">Выбрать тариф</a>
+  </section>
+
+  <section>
+    <div class="rule"><span class="num">05</span><h2>Не знаете, с чего начать?</h2></div>
     <p>Просто напишите мне: кого поздравляем, сколько человек показать, какие детали важны. Подскажу формат и длину, расскажу, каким получится мультик. Ни к чему не обязывает.</p>
     <a class="btn ghost" href="https://t.me/ruslan_ai_creator">Написать</a>
   </section>
 
   <section>
-    <div class="rule"><span class="num">05</span><h2>Готовы начать?</h2></div>
+    <div class="rule"><span class="num">06</span><h2>Готовы начать?</h2></div>
     <img class="section-img" src="final.jpg" alt="Старая фотография оживает в мультик через золотое сияние">
     <p style="margin-top:18px;">Выбираете длину и оплачиваете. После оплаты пришлю короткую форму для деталей и фотографий. Через 3 дня получаете готовый мультик.</p>
     <a class="btn" href="https://t.me/ruslan_ai_creator">Оплатить заказ</a>
